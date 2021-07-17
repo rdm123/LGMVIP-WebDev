@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0,0.5)), url("https://img.freepik.com/free-photo/cascade-boat-clean-china-natural-rural_1417-1356.jpg?size=626&ext=jpg") center/cover no-repeat;
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50vw;
+    position: relative;
+}
+.icon{
+    width: 90px;
+    height: 90px;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
+.vert-line{
+    height: 50px;
+    width: 1px;
+    background: #f0f0f0;
+}
+.text{
+    padding: 50px 0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.text h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+.text p{
+    padding-top: 10px;
+    font-weight: 300;
+    line-height: 1.8;;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul a{
+    text-decoration-color: none;
+    color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+nav{
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+}
+nav ul li{
+    display: block;
+    padding: 12px 0;
+    width: 120px;
+    border-right: 1px solid #f0f0f0;
+    transition: background 0.5s ease;
+}
+nav ul li:last-child{
+    border: none;
+}
+nav ul li:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/***************/
+
+.page{
+    width: 60vw;
+    position: absolute;
+    margin: 38px auto;
+    background: rgba(0, 0, 0, 0.95);
+    color: #fff;
+    line-height: 1.7;
+    padding: 35px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.page span{
+    display: block;
+    font-size: 26px;
+    text-align: right;
+}
+.page span i{
+    cursor: pointer;
+}
+.page .title{
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    width: 120px;
+    margin: 20px 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.page p{
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+article{
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #000;
+    background: #fff;
+    margin: 25px 0;
+}
+#about h3{
+    text-align: center;
+    padding: 5px 0;
+}
+#about .italic{
+    font-style: italic;
+    font-weight: bold;
+}
+form{
+    margin: 30px 0;
+}
+form label, form input, form textarea{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0;
+}
+form input, form textarea{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #000;
+    outline: none;
+}
+form input[type = "submit"]{
+    width: 120px;
+    margin: 0 auto;
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+form input[type = "submit"]:hover{
+    opacity: 0.5;
+}
+
+/* media queries */
+
+@media screen and (max-width: 560px){
+    nav ul li{
+        width: 70px;
+        padding: 7px 0;
+    }
+    nav ul a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        width: 90vw;
+    }
+    .page{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 1170px){
+    .page{
+        width: 80vw;
+    }
+}
